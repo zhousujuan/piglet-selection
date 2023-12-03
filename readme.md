@@ -42,11 +42,97 @@
 
 ## 技术架构
 
+### 技术架构图
+
 ![image-20231202174131415](./image/技术架构图.png)
+
+### 核心技术简介
+
+#### SpringBoot
+
+简化新`Spring`应用的初始搭建以及开发过程
+
+#### SpringCloud
+
+基于`Spring Boot` 实现的云原生应用开发工具
+
+使用的技术：Spring Cloud Gateway、Spring Cloud OpenFeign、Spring Cloud Alibaba Nacos等
+
+#### MyBatis-Plus
+
+持久层框架
+
+为什么不用MyBatis，plus更好
+
+#### Redis
+
+缓存数据库
+
+包括购物车、库存信息，都在这个里面进行存储
+
+#### Redisson
+
+基于Redis的Java驻内存数据网格，实现分布锁
+
+> `分布锁`:
+>
+> 在并发场景中或者多个服务中，同时做某个操作，会产生一些问题，这个方法就是用来解决这些问题的
+
+#### RabbitMQ
+
+消息中间件
+
+> 下单完成之后，要扣库存，可以在这个过程中，通过RabbitMQ来做异步处理
+
+#### ElasticSearch（ES） + Kibana
+
+全文检索服务器 + 可视化数据监控
+
+#### ThreadPoolExecutor
+
+线程池来实现异步操作，提高效率
+
+#### OSS
+
+文件存储服务
+
+#### Knife4j（Swagger）
+
+API接口文档工具
+
+#### Nginx
+
+负载均衡
+
+#### MySQL
+
+关系型数据库
+
+#### 微信支付
+
+#### 微信小程序
+
+#### Docker
+
+容器技术
+
+#### DockerFile
+
+管理Docker的镜像命令文本
+
+
+
+
+
+
 
 ## 开发日志
 
+> 2023/12/03
+- 
+
 > 2023/12/02
+
 - 系统架构调研和绘制
 - 功能架构调研和绘制
 > 2023/12/01
