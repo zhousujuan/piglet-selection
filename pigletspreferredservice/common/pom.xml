@@ -14,8 +14,38 @@
     <modules>
         <module>common-util</module>
         <module>service-util</module>
-        <module>model</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <scope>provided </scope>
+        </dependency>
 
+        <!--lombok用来简化实体类：需要安装lombok插件-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!-- https://doc.xiaominfo.com/knife4j/documentation/ -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!--用来转换json使用 {JavaObject - json | json - JavaObject}-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+        <!-- 服务调用feign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <scope>provided </scope>
+        </dependency>
+
+    </dependencies>
 </project>
